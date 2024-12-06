@@ -1,2 +1,2 @@
 #!/bin/bash
-gunicorn -w 1 -b 0.0.0.0:5003 app:app --timeout 600
+gunicorn -w 1 --timeout 600 -b 0.0.0.0:5003 app:app
